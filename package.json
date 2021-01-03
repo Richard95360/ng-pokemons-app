@@ -3,38 +3,42 @@
   "version": "1.0.0",
   "description": "An awesome application to handle some pokemons.",
   "scripts": {
-    "build": "tsc -p src/",
-    "build:watch": "tsc -p src/ -w",
-    "serve": "lite-server -c=bs-config.json",
-    "prestart": "npm run build",
-    "start": "concurrently \"npm run build:watch\" \"npm run serve\""
+  "deploy": "npm run build&&gh-pages -d build",
+  "build": "tsc -p src/",
+  "build:watch": "tsc -p src/ -w",
+  "serve": "lite-server -c=bs-config.json",
+  "prestart": "npm run build",
+  "start": "concurrently \"npm run build:watch\" \"npm run serve\""
   },
   "private": true,
+  "homepage": "https://Richard95360.github.io/ng-pokemons-app",
   "dependencies": {
-    "@angular/animations": "~9.0.5",
-    "@angular/common": "~9.0.5",
-    "@angular/compiler": "~9.0.5",
-    "@angular/core": "~9.0.5",
-    "@angular/forms": "~9.0.5",
-    "@angular/platform-browser": "~9.0.5",
-    "@angular/platform-browser-dynamic": "~9.0.5",
-    "@angular/router": "~9.0.5",
-    "angular-route": "^1.8.1",
-    "core-js": "~3.6.4",
-    "rjx": "^3.0.3",
-    "route-node": "^4.1.1",
-    "routes-router": "^4.3.1",
-    "rxjs": "~6.5.4",
-    "rxjs-compat": "~6.5.4",
-    "systemjs": "~0.19.47",
-    "zone.js": "~0.10.2"
+  "@angular/animations": "~9.0.5",
+  "@angular/common": "~9.0.5",
+  "@angular/compiler": "~9.0.5",
+  "@angular/core": "~9.0.5",
+  "@angular/forms": "~9.0.5",
+  "@angular/platform-browser": "~9.0.5",
+  "@angular/platform-browser-dynamic": "~9.0.5",
+  "@angular/router": "~9.0.5",
+  "angular-route": "^1.8.1",
+  "core-js": "~3.6.4",
+  "rjx": "^3.0.3",
+  "route-node": "^4.1.1",
+  "routes-router": "^4.3.1",
+  "rxjs": "~6.5.4",
+  "rxjs-compat": "~6.5.4",
+  "systemjs": "~0.19.47",
+  "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "angular-in-memory-web-api": "~0.9.0",
-    "concurrently": "~5.1.0",
-    "firebase-tools": "~7.14.0",
-    "lite-server": "~2.5.4",
-    "tslint": "~6.0.0",
-    "typescript": "~3.8.3"
+  "angular-in-memory-web-api": "~0.9.0",
+  "concurrently": "~5.1.0",
+  "firebase-tools": "^9.1.0",
+  "lite-server": "^2.6.1",
+  "tslint": "~6.0.0",
+  "typescript": "~3.8.3"
   }
-}
+  }
+  
+  
